@@ -1,0 +1,33 @@
+.ticker-container {
+  width: 100%;
+  overflow: hidden;
+  background-color: #2B3035;
+  color: white;
+  padding: 5px 0;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  font-size: 0.875rem;
+}
+
+.ticker {
+  display: flex;
+  animation: ticker 37.5s linear infinite;
+  white-space: nowrap;
+}
+
+.ticker-item {
+  margin-right: 50px;
+}
+
+.ticker:hover {
+  animation-play-state: paused;
+}
+
+@keyframes ticker {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-275%);
+  }
+}
