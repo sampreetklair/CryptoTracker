@@ -23,7 +23,7 @@ function App() {
       })
       .catch(error => console.error('Error fetching data:', error));
 
-    fetch('https://newsdata.io/api/1/latest?apikey=pub_47699a86a845928c44a6f08d2d8dccac34b0d&q=crypto&language=en')
+    fetch('https://newsdata.io/api/1/latest?apikey=pub_4770706d7a1a45991d5d0fc48dc5854bd53f5&q=crypto&language=en')
       .then(response => response.json())
       .then(data => setNews(data.results.slice(0, 6)))
       .catch(error => console.error('Error fetching news:', error));
